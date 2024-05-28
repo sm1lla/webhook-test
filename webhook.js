@@ -15,11 +15,6 @@ async function git_pull() {
 
 // Webhook endpoint
 app.post("/webhook", (req, res) => {
-    const event = req.body;
-    // Process the event
-    //console.log("Received event:", event);
-    // Example: Handle different event types
-    
     // Respond to acknowledge receipt of the event
     res.status(202).send('Accepted');
 
